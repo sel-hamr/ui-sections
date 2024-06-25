@@ -7,6 +7,7 @@ export default function RetroGrid({ className }: { className?: string }) {
         "pointer-events-none absolute h-full w-full overflow-hidden  [perspective:250px]",
         className
       )}
+      style={{ clipPath: "polygon(0 27%, 100% 27%, 100% 100%, 0 100%)" }}
     >
       <div className="absolute inset-0 [transform:rotateX(32deg)]">
         <div
