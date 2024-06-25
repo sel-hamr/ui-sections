@@ -13,6 +13,7 @@ import Logo from "../ui/logo";
 import { cn } from "@/lib/utils";
 import { projects } from "./data";
 import { GithubIcon } from "../assets/icons/github";
+import { LinkedinIcon } from "../assets/icons";
 
 export default function NavBar() {
   return (
@@ -43,13 +44,18 @@ export default function NavBar() {
               </ul>
             </NavigationMenuContent>
           </NavigationMenuItem>
-          <NavigationMenuItem className="ml-auto">
-            <Link href="/docs" legacyBehavior passHref>
-              <GithubIcon />
-            </Link>
-          </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
+      <div className="hidden md:flex gap-3 ml-auto">
+        <GithubIcon
+          width={19}
+          className="cursor-pointer hover:fill-slate-700 "
+        />
+        <LinkedinIcon
+          width={19}
+          className="cursor-pointer hover:fill-slate-700 "
+        />
+      </div>
     </div>
   );
 }
@@ -78,3 +84,5 @@ const ListItem = React.forwardRef<
     </li>
   );
 });
+
+ListItem.displayName = "ListItem";
