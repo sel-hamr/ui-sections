@@ -1,12 +1,14 @@
+import { SvgIconProps } from "@/lib/types";
 import React from "react";
 
-export function LogoIcon() {
+export function LogoIcon(props: SvgIconProps) {
   return (
     <svg
       width="17px"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      {...props}
     >
       <path
         d="M7.24229 11.1591C7.69079 9.62498 9.4111 8.04803 11.0847 7.6369L21.5187 5.07371C23.1923 4.66258 24.1854 5.57295 23.7369 7.10709L20.9407 16.6716C20.4922 18.2057 18.7719 19.7827 17.0983 20.1938L6.66432 22.757C4.99072 23.1681 3.99758 22.2577 4.44609 20.7236L7.24229 11.1591Z"

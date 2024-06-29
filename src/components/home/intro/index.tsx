@@ -19,7 +19,7 @@ const animateElement = {
 
 export function Intro() {
   return (
-    <div className="flex flex-col gap-5  items-center">
+    <div className="flex flex-col md:gap-6 gap-8  items-center pt-6 md:pt-0">
       <Sonner />
       <SeparateAway
         upper_text="UI library for"
@@ -27,17 +27,20 @@ export function Intro() {
         duration={0.2}
         hidden_settings={{ opacity: 0 }}
         visible_settings={{ opacity: 1 }}
-        className="max-w-4xl opacity-0  z-10 translate-y-4 text-center text-4xl font-black  md:text-7xl  tracking-tighter text-balance"
+        className="max-w-4xl opacity-0 w-full  z-10 translate-y-4 text-center text-4xl font-black  md:text-5xl 2xl:text-7xl  xl:text-6xl  tracking-tighter text-balance"
       />
 
       <MotionAnimate variant={animateElement}>
-        <p className="mx-auto z-10  max-w-3xl text-center text-base leading-relaxed  md:text-xl md:leading-relaxed">
+        <p className="mx-auto z-[1]  max-w-3xl text-center text-base leading-relaxed   md:leading-relaxed   ">
           Copy paste the most trending components and use them in your websites
           without having to worry about styling and animations.
         </p>
       </MotionAnimate>
       <MotionAnimate variant={animateElement}>
-        <SpotlightButton title="See sections" className="w-80 h-14" />
+        <SpotlightButton
+          title="See sections"
+          className="w-80 h-10  2xl:h-14  xl:h-11"
+        />
       </MotionAnimate>
     </div>
   );

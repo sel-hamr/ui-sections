@@ -19,7 +19,7 @@ export default function MotionAnimate({
       variants={variant}
       initial="hidden"
       animate="visible"
-      className="relative z-20"
+      className="relative z-[1]"
     >
       {children}
     </motion.div>

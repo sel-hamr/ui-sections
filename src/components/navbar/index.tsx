@@ -19,7 +19,7 @@ export default function NavBar() {
   return (
     <div className="sticky w-[90%] max-w-4xl mx-auto h-12  flex items-center z-20  border-b ">
       <Logo />
-      <NavigationMenu>
+      <NavigationMenu className="ml-auto md:ml-0">
         <NavigationMenuList>
           <NavigationMenuItem className="z-50 relative">
             <Link href="/docs" legacyBehavior passHref>
@@ -31,7 +31,7 @@ export default function NavBar() {
           <NavigationMenuItem>
             <NavigationMenuTrigger>Others</NavigationMenuTrigger>
             <NavigationMenuContent>
-              <ul className="grid w-[400px] gap-1 p-2 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+              <ul className="grid w-full z-50 gap-1 p-2 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
                 {projects.map((project) => (
                   <ListItem
                     key={project.title}

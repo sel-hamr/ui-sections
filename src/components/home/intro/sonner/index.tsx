@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export default function Sonner() {
   return (
     <motion.div
-      className="hidden md:flex mb-1.5 rounded-full bg-zinc-600 cursor-pointer relative z-10"
+      className=" rounded-full bg-zinc-600 cursor-pointer relative z-10 -mb-2 hidden md:flex"
       initial={{ rotate: -2, scale: 0.9, opacity: 0 }}
       animate={{ rotate: 0, scale: 1, opacity: 1 }}
       transition={{

@@ -34,8 +34,7 @@ export default function Info() {
   return (
     <>
       <div className="relative z-10 hidden md:flex">
-        <div className="block sm:hidden absolute h-full w-20 bg-white dark:bg-black right-0 [mask-image:linear-gradient(to_left,white,transparent)] z-40"></div>
-        <div className="flex  justify-start items-center mb-4 overflow-x-auto relative z-20 overflow-hidden">
+        <div className="flex justify-start items-center overflow-x-auto relative z-20 overflow-hidden">
           {listLang.map((lang, index) => (
             <motion.div
               key={index}
@@ -45,7 +44,7 @@ export default function Info() {
               animate={"visible"}
               initial={"hidden"}
             >
-              <span>{lang.icon}</span>
+              {lang.icon}
               <span className="text-sm font-semibold text-black flex-shrink-0">
                 {lang.name}
               </span>
@@ -59,10 +58,10 @@ export default function Info() {
         animate={"visible"}
         initial={"hidden"}
       >
-        <h1 className="max-w-4xl  text-center text-2xl font-black leading-[1.15] md:text-3xl md:leading-[1.15] tracking-tighter text-balance">
+        <h1 className="max-w-4xl  text-center text-2xl  2xl:text-3xl  font-black leading-[1.15]  md:leading-[1.15] tracking-tighter text-balance">
           What People Are Saying
         </h1>
-        <p className=" max-w-lg text-center">
+        <p className=" max-w-lg text-center text-sm ">
           Don&apos;t just take our word for it. Here&apos;s what{" "}
           <b>real people</b> are saying about UI HUB on Twitter.
         </p>
