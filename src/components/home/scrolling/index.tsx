@@ -22,7 +22,7 @@ const animate = {
 export function Scrolling() {
   return (
     <motion.div
-      className="relative bg-white w-full z-10 overflow-hidden rotate-2 border-t-2 border-b-2 border-black mt-10"
+      className="relative bg-white w-full z-10 overflow-hidden rotate-2 border-t-2 border-b-2 border-black "
       variants={animate}
       animate={"visible"}
       initial={"hidden"}

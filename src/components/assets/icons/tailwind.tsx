@@ -3,7 +3,7 @@ export function TailwindIcon() {
     <svg
       stroke="currentColor"
       fill="currentColor"
-      stroke-width="0"
+      strokeWidth="0"
       viewBox="0 0 24 24"
       className="md:h-10 md:w-10 h-4 w-4 text-black flex-shrink-0 stroke-[0.5px]"
       height="1em"
