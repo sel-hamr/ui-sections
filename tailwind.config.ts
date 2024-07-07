@@ -79,6 +79,13 @@ const config = {
           "0%": { transform: "translateY(-50%)" },
           "100%": { transform: "translateY(0)" },
         },
+        "cloud-section-one": {
+          "0%": { transform: "scale(1)", left: "5%" },
+          "25%": { transform: "scale(1.5)", left: "25%" },
+          "50%": { transform: "scale(1)", left: "50%" },
+          "75%": { transform: "scale(1.5)", left: "75%" },
+          "100%": { transform: "scale(1)", left: "90%" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -86,6 +93,7 @@ const config = {
         marquee: "marquee var(--duration) linear infinite",
         "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
         grid: "grid 15s linear infinite",
+        "cloud-section-one": "cloud-section-one 9s linear alternate infinite",
       },
     },
   },

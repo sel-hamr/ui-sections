@@ -6,6 +6,7 @@ export interface ButtonProps {
   handleClick?: () => void;
   pending?: boolean;
   className?: string;
+  labelClassName?: string;
 }
 
 export const SpotlightButton = ({ title, pending, className }: ButtonProps) => {
@@ -16,7 +17,9 @@ export const SpotlightButton = ({ title, pending, className }: ButtonProps) => {
       <button
         disabled={pending}
         data-loading={pending}
-        className="bg-white data-[loading=true]:bg-background-foreground group  hover:-translate-x-1 hover:-translate-y-1 z-[2] w-full h-full text-black text-lg font-semibold absolute block border-2 border-black  border-solid tracking-widest active:translate-x-1 active:translate-y-1 active:shadow-lg active:scale-95 transition-transform duration-200 ease-in-out"
+        className={cn(
+          "bg-white data-[loading=true]:bg-background-foreground group hover:-translate-x-1 hover:-translate-y-1 z-[2] w-full h-full text-black text-lg font-semibold absolute block border-2 border-black  border-solid tracking-widest active:translate-x-1 active:translate-y-1 active:shadow-lg active:scale-95 transition-transform duration-200 ease-in-out"
+        )}
         style={{
           clipPath,
         }}

@@ -74,3 +74,15 @@
     @apply bg-background text-foreground;
   }
 }
+
+body {
+  transition-property: all;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+.page-transition {
+  transition: opacity 0;
+  /* background: black; */
+  /* transform: translateY(20px); */
+  filter: blur(12px);
+}
