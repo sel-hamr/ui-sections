@@ -17,7 +17,7 @@ import { LinkedinIcon } from "../assets/icons";
 
 export default function NavBar() {
   return (
-    <div className="sticky w-[90%] max-w-4xl mx-auto h-12  flex items-center z-20  border-b ">
+    <div className="sticky w-[90%] max-w-6xl mx-auto h-12  flex items-center z-20  border-b ">
       <Logo />
       <NavigationMenu className="ml-auto md:ml-0">
         <NavigationMenuList>

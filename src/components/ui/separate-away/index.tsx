@@ -10,6 +10,7 @@ interface SeparateAwayProps {
   className?: string;
   hidden_settings?: TargetAndTransition;
   visible_settings?: TargetAndTransition;
+  containerClassName?: string;
 }
 
 export function SeparateAway({
@@ -19,6 +20,7 @@ export function SeparateAway({
   visible_settings = {},
   className,
   hidden_settings = {},
+  containerClassName,
 }: SeparateAwayProps) {
   const separate = {
     hidden: { ...hidden_settings, y: 0 },
@@ -34,7 +36,7 @@ export function SeparateAway({
   };
 
   return (
-    <div>
+    <div className={containerClassName}>
       <motion.h1
         custom={-1}
         variants={separate}
