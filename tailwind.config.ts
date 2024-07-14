@@ -86,6 +86,11 @@ const config = {
           "75%": { transform: "scale(1.5)", left: "75%" },
           "100%": { transform: "scale(1)", left: "90%" },
         },
+        "border-spin": {
+          "100%": {
+            transform: "rotate(-360deg)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -94,6 +99,7 @@ const config = {
         "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
         grid: "grid 15s linear infinite",
         "cloud-section-one": "cloud-section-one 9s linear alternate infinite",
+        "border-spin": "border-spin 7s linear infinite",
       },
     },
   },
