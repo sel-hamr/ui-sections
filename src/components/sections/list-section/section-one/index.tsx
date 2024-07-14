@@ -13,7 +13,7 @@ import {
 } from "react-icons/si";
 import { LuArrowRightCircle } from "react-icons/lu";
 import { FoldElement, FoldElements } from "@/components/ui/fold-element";
-import { Intro } from "./components/block-one";
+import { Intro } from "./assets/block-one";
 
 export function SectionOne() {
   return (
@@ -21,8 +21,8 @@ export function SectionOne() {
       <div className="h-[370px]  col-span-7 rounded-xl">
         <Intro />
       </div>
-      <div className="h-[95px] col-span-5 grid grid-cols-3   rounded-md">
-        <div className="h-full  col-span-1">
+      <div className="h-[95px] col-span-5 grid grid-cols-3 rounded-md">
+        <div className="h-full col-span-1">
           <FoldElements
             items={[
               <FoldElement key={1} className="bg-[#2e2e35]">
@@ -43,7 +43,7 @@ export function SectionOne() {
             ]}
           />
         </div>
-        <div className="h-full  col-span-1">
+        <div className="h-full col-span-1">
           <FoldElements
             delay={500}
             items={[
@@ -59,7 +59,7 @@ export function SectionOne() {
             ]}
           />
         </div>
-        <div className="h-full  col-span-1">
+        <div className="h-full col-span-1">
           <FoldElements
             delay={1000}
             items={[
