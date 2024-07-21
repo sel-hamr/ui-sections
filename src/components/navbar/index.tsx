@@ -11,7 +11,7 @@ import {
 import Link from "next/link";
 import Logo from "../ui/logo";
 import { cn } from "@/lib/utils";
-import { projects } from "./data";
+import { projects, URL_GITHUB, URL_LINKEDIN } from "./data";
 import { GithubIcon } from "../assets/icons/github";
 import { LinkedinIcon } from "../assets/icons";
 
@@ -22,9 +22,9 @@ export default function NavBar() {
       <NavigationMenu className="ml-auto md:ml-0">
         <NavigationMenuList>
           <NavigationMenuItem className="z-50 relative">
-            <Link href="/docs" legacyBehavior passHref>
+            <Link href="/sections" legacyBehavior passHref>
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                components
+                Sections
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
@@ -47,14 +47,18 @@ export default function NavBar() {
         </NavigationMenuList>
       </NavigationMenu>
       <div className="hidden md:flex gap-3 ml-auto">
-        <GithubIcon
-          width={19}
-          className="cursor-pointer hover:fill-slate-700 "
-        />
-        <LinkedinIcon
-          width={19}
-          className="cursor-pointer hover:fill-slate-700 "
-        />
+        <Link href={URL_GITHUB}>
+          <GithubIcon
+            width={19}
+            className="cursor-pointer hover:fill-slate-700 "
+          />
+        </Link>
+        <Link href={URL_LINKEDIN}>
+          <LinkedinIcon
+            width={19}
+            className="cursor-pointer hover:fill-slate-700 "
+          />
+        </Link>
       </div>
     </div>
   );

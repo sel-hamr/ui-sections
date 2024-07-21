@@ -29,3 +29,7 @@ export const projects: {
       "this website - Portfolio website built with Next.js, Tailwind CSS, and Framer Motion. It is a responsive website with a dark mode feature.",
   },
 ];
+
+export const URL_GITHUB = "https://github.com/sel-hamr";
+
+export const URL_LINKEDIN = "https://www.linkedin.com/in/soufiane-elhamri/";

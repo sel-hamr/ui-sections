@@ -29,9 +29,7 @@ export const getNearestIndicator = (
     (closest, child) => {
       const box = child.getBoundingClientRect();
       const offset = e.clientY - (box.top + DISTANCE_OFFSET);
-      // console.log("offset", offset, e.clientY, box.top);
       if (offset < 0 && offset > closest.offset) {
-        // console.log("change", offset, e.clientY, box.top);
         return { offset: offset, element: child };
       } else {
         return closest;
