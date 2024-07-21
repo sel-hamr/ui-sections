@@ -3,6 +3,7 @@ import {
   SectionTwo,
   SectionThree,
   SectionFour,
+  SectionFive,
 } from "./list-section";
 
 export const listSections = [
@@ -25,5 +26,10 @@ export const listSections = [
     title: "jira board Section",
     className: "bg-[#2e2e35]",
     component: SectionFour,
+  },
+  {
+    title: "List of Cards Section",
+    className: "bg-gray-900",
+    component: SectionFive,
   },
 ] as const;
