@@ -10,7 +10,7 @@ export const SectionFive = () => {
   return (
     <div className="h-full w-full flex  justify-center overflow-hidden relative">
       <div className="flex-1 justify-center flex p-9 flex-col gap-4">
-        <p className="text-5xl font-bold text-white max-w-[550px] leading-tight	mb-5">
+        <p className="text-5xl font-bold text-sky-500 max-w-[550px] leading-tight	mb-5">
           Make your websites look 10x better
         </p>
         <p className="text-zinc-100	text-2xl ">

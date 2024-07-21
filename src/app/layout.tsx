@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/navbar";
+import { Toaster } from "@/components/ui/toast";
 
 const poppins = Poppins({
   weight: ["400", "500", "600"],
@@ -32,6 +33,7 @@ export default function RootLayout({
       <body className={poppins.className}>
         <NavBar />
         {children}
+        <Toaster />
       </body>
     </html>
   );

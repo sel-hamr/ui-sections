@@ -11,6 +11,7 @@ export const Sections = () => {
             key={index}
             title={section.title}
             className={section.className}
+            copyText={section.code}
           >
             <section.component />
           </Section>

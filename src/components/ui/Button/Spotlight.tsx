@@ -9,11 +9,19 @@ export interface ButtonProps {
   labelClassName?: string;
 }
 
-export const SpotlightButton = ({ title, pending, className }: ButtonProps) => {
+export const SpotlightButton = ({
+  title,
+  pending,
+  className,
+  handleClick,
+}: ButtonProps) => {
   const clipPath =
     "polygon(12px 0%, calc(100% - 12px) 0%, 100% 12px, 100% 100%, calc(100% - 12px) 100%, 12px 100%, 0px 100%, 0px 0px)";
   return (
-    <div className={cn("relative w-full h-full ", className)}>
+    <div
+      className={cn("relative w-full h-full ", className)}
+      onClick={handleClick}
+    >
       <button
         disabled={pending}
         data-loading={pending}
