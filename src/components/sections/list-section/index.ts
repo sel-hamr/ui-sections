@@ -8,3 +8,7 @@ export * from "./section-four";
 export * from "./section-four/code";
 export * from "./section-five";
 export * from "./section-five/code";
+export * from "./section-six";
+export * from "./section-six/code";
+export * from "./section-seven";
+export * from "./section-seven/code";

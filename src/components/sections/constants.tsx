@@ -9,6 +9,10 @@ import {
   codeThree,
   codeFour,
   codeFive,
+  SectionSix,
+  codeSeven,
+  codeSix,
+  SectionSeven,
 } from "./list-section";
 
 export const listSections = [
@@ -41,5 +45,17 @@ export const listSections = [
     className: "bg-gray-900",
     component: SectionFive,
     code: codeFive,
+  },
+  {
+    title: "Reveal Bento Section",
+    className: "bg-zinc-900",
+    component: SectionSix,
+    code: codeSix,
+  },
+  {
+    title: "Tinder cards Section",
+    className: "bg-zinc-900",
+    component: SectionSeven,
+    code: codeSeven,
   },
 ] as const;
