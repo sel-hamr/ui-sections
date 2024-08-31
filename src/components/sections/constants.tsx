@@ -13,6 +13,7 @@ import {
   codeSeven,
   codeSix,
   SectionSeven,
+  SectionEight,
 } from "./list-section";
 
 export const listSections = [
@@ -56,6 +57,12 @@ export const listSections = [
     title: "Tinder cards Section",
     className: "bg-zinc-900",
     component: SectionSeven,
+    code: codeSeven,
+  },
+  {
+    title: "infinite cards Section",
+    className: "bg-zinc-900",
+    component: SectionEight,
     code: codeSeven,
   },
 ] as const;
