@@ -12,3 +12,4 @@ export * from "./section-six";
 export * from "./section-six/code";
 export * from "./section-seven";
 export * from "./section-seven/code";
+export * from "./section-eight";
