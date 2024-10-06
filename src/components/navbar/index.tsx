@@ -17,7 +17,7 @@ import { LinkedinIcon } from "../assets/icons";
 
 export default function NavBar() {
   return (
-    <div className="sticky w-[90%] max-w-6xl mx-auto h-12  flex items-center z-20  border-b ">
+    <div className="sticky w-[90%] max-w-6xl mx-auto h-14 flex items-center z-20 border-b py-3">
       <Logo />
       <NavigationMenu className="ml-auto md:ml-0">
         <NavigationMenuList>
@@ -46,16 +46,16 @@ export default function NavBar() {
           </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
-      <div className="hidden md:flex gap-3 ml-auto">
+      <div className="hidden md:flex gap-4 ml-auto">
         <Link href={URL_GITHUB}>
           <GithubIcon
-            width={19}
+            width={26}
             className="cursor-pointer hover:fill-slate-700 "
           />
         </Link>
         <Link href={URL_LINKEDIN}>
           <LinkedinIcon
-            width={19}
+            width={26}
             className="cursor-pointer hover:fill-slate-700 "
           />
         </Link>
